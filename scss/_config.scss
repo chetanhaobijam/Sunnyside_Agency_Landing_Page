@@ -1,0 +1,29 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+// Universal Styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+// Colors
+/* Primary Colors */
+$soft-red: #fe7867;
+$yellow: #fad400;
+$dark-saturated-cyan: #25564B;
+$dark-blue: #19536B;
+$dark-moderate-cyan: #458C7E;
+
+/* Neutral Colors */
+$very-dark-saturated-blue: #23303E;
+$very-dark-grayish-blue: #5A636C;
+$dark-grayish-blue: #818498;
+$grayish-blue: #A7AAAE;
+$white: #fff;
+
+// Font-stack
+$font-stack: 600 18px 'Barlow', sans-serif;
+$fraunces-font: 700 18px 'Fraunces', serif;
