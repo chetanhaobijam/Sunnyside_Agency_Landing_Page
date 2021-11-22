@@ -10,3 +10,50 @@
 body {
   font: 600 18px "Barlow", sans-serif;
 }
+
+header nav {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 2rem 3rem;
+}
+header nav .navbrand {
+  font-size: 1.7rem;
+}
+header nav .nav-icon {
+  display: none;
+}
+header nav .nav-items {
+  display: flex;
+  list-style: none;
+}
+header nav .nav-items .nav-item {
+  margin-left: 3rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+header nav .nav-items .nav-item:last-child {
+  font: 700 18px "Fraunces", serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #23303E;
+  padding: 1rem 1.5rem;
+}
+header nav .nav-items .nav-item:last-child:hover {
+  background-color: #6FCFFF;
+  color: #fff;
+}
+
+main .hero {
+  background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
+  height: 100vh;
+  padding-top: 5rem;
+}
