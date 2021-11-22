@@ -1,0 +1,26 @@
+@media(max-width: 768px) {
+  header {
+    nav {
+      .nav-icon {
+        display: block;
+      }
+      .nav-items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media(max-width: 450px) {
+  main {
+    .hero {
+      background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
+      height: 70vh;
+    }
+  }
+}
