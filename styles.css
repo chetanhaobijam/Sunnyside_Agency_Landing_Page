@@ -12,12 +12,13 @@ body {
 }
 
 header nav {
-  position: absolute;
+  position: relative;
   inset: 0 auto auto 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   color: #fff;
+  background-color: #3ebfff;
   padding: 2rem 3rem;
 }
 header nav .navbrand {
@@ -26,11 +27,11 @@ header nav .navbrand {
 header nav .nav-icon {
   display: none;
 }
-header nav .nav-items {
+header nav .nav-items-container .nav-items {
   display: flex;
   list-style: none;
 }
-header nav .nav-items .nav-item {
+header nav .nav-items-container .nav-items .nav-item {
   margin-left: 3rem;
   font-size: 0.9rem;
   display: flex;
@@ -38,7 +39,7 @@ header nav .nav-items .nav-item {
   justify-content: center;
   cursor: pointer;
 }
-header nav .nav-items .nav-item:last-child {
+header nav .nav-items-container .nav-items .nav-item:last-child {
   font: 700 18px "Fraunces", serif;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -47,7 +48,7 @@ header nav .nav-items .nav-item:last-child {
   color: #23303E;
   padding: 1rem 1.5rem;
 }
-header nav .nav-items .nav-item:last-child:hover {
+header nav .nav-items-container .nav-items .nav-item:last-child:hover {
   background-color: #6FCFFF;
   color: #fff;
 }
@@ -62,13 +63,31 @@ main .hero {
   header nav .nav-icon {
     display: block;
   }
-  header nav .nav-items {
+  header nav .nav-items-container {
     position: absolute;
-    top: 0;
+    top: 5em;
     left: 0;
     width: 100%;
+    display: flex;
+  }
+  header nav .nav-items-container .nav-items {
     background-color: #fff;
     flex-direction: column;
+    color: #000;
+    margin: 0 3rem;
+    width: 100%;
+  }
+  header nav .nav-items-container .nav-items::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 46px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    transform: rotate(45deg);
   }
 }
 @media (max-width: 450px) {

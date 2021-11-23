@@ -6,12 +6,13 @@ body {
 
 header {
   nav {
-    position: absolute;
+    position: relative;
     inset: 0 auto auto 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     color: $white;
+    background-color: $header-blue;
     padding: 2rem 3rem;
 
     .navbrand {
@@ -21,31 +22,32 @@ header {
     .nav-icon {
       display: none;
     }
-
-    .nav-items {
-      display: flex;
-      list-style: none;
-
-      .nav-item {
-        margin-left: 3rem;
-        font-size: 0.9rem;
+    .nav-items-container {
+      .nav-items {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        cursor: pointer;
-
-        &:last-child {
-          font: $fraunces-font;
-          font-size: 0.8rem;
-          text-transform: uppercase;
-          background-color: $white;
-          border-radius: 30px;
-          color: $very-dark-saturated-blue;
-          padding: 1rem 1.5rem;
-
-          &:hover {
-            background-color: #6FCFFF;
-            color: $white;
+        list-style: none;
+  
+        .nav-item {
+          margin-left: 3rem;
+          font-size: 0.9rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          cursor: pointer;
+  
+          &:last-child {
+            font: $fraunces-font;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            background-color: $white;
+            border-radius: 30px;
+            color: $very-dark-saturated-blue;
+            padding: 1rem 1.5rem;
+  
+            &:hover {
+              background-color: #6FCFFF;
+              color: $white;
+            }
           }
         }
       }
