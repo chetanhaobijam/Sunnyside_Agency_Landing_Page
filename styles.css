@@ -80,6 +80,57 @@ main .hero img {
   position: relative;
   top: 80px;
 }
+main .services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+main .services .grid-item h2 {
+  font: 900 18px "Fraunces", serif;
+  font-size: 1.8rem;
+  width: 72%;
+  color: #23303E;
+}
+main .services .grid-item p {
+  font-size: 0.8rem;
+  color: #5A636C;
+  padding: 2rem 0;
+  width: 73%;
+  line-height: 2em;
+}
+main .services .grid-item a {
+  font: 900 18px "Fraunces", serif;
+  color: #23303E;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  -webkit-text-decoration: underline #fad400;
+          text-decoration: underline #fad400;
+  text-decoration-thickness: 3px;
+}
+main .services .grid-item:nth-child(1) {
+  background: url("./images/desktop/image-transform.jpg") center/cover no-repeat;
+  order: 2;
+}
+main .services .grid-item:nth-child(2) {
+  order: 1;
+  padding: 7rem;
+}
+main .services .grid-item:nth-child(3) {
+  background: url("./images/desktop/image-stand-out.jpg") center/cover no-repeat;
+  order: 3;
+}
+main .services .grid-item:nth-child(4) {
+  order: 4;
+  padding: 7rem;
+}
+main .services .grid-item:nth-child(5) {
+  background: url("./images/desktop/image-graphic-design.jpg") top/cover no-repeat;
+  order: 5;
+}
+main .services .grid-item:nth-child(6) {
+  background: url("./images/desktop/image-photography.jpg") top/cover no-repeat;
+  order: 6;
+}
 
 @media (max-width: 768px) {
   header nav .nav-icon {
