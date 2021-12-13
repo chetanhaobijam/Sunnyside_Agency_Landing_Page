@@ -7,6 +7,10 @@
 
 /* Primary Colors */
 /* Neutral Colors */
+.display {
+  display: flex !important;
+}
+
 body {
   font: 600 18px "Barlow", sans-serif;
 }
@@ -20,9 +24,10 @@ header nav {
   color: #fff;
   background-color: #3ebfff;
   padding: 2rem 3rem;
+  max-height: 100px;
 }
 header nav .navbrand {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 header nav .nav-icon {
   display: none;
@@ -38,9 +43,11 @@ header nav .nav-items-container .nav-items .nav-item {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
+  color: #fff;
 }
 header nav .nav-items-container .nav-items .nav-item:last-child {
-  font: 700 18px "Fraunces", serif;
+  font: 900 18px "Fraunces", serif;
+  font-weight: 900;
   font-size: 0.8rem;
   text-transform: uppercase;
   background-color: #fff;
@@ -62,25 +69,29 @@ main .hero {
 @media (max-width: 768px) {
   header nav .nav-icon {
     display: block;
+    font-size: 2rem;
+    color: #ffffff78;
+    cursor: pointer;
   }
   header nav .nav-items-container {
     position: absolute;
-    top: 5em;
+    top: 7em;
     left: 0;
     width: 100%;
-    display: flex;
+    display: none;
   }
   header nav .nav-items-container .nav-items {
     background-color: #fff;
     flex-direction: column;
-    color: #000;
     margin: 0 3rem;
     width: 100%;
+    text-align: center;
+    padding: 2rem 0;
   }
   header nav .nav-items-container .nav-items::before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -19px;
     right: 46px;
     width: 0;
     height: 0;
@@ -89,8 +100,40 @@ main .hero {
     border-bottom: 15px solid transparent;
     transform: rotate(45deg);
   }
+  header nav .nav-items-container .nav-items .nav-item {
+    margin: 0;
+    padding: 1rem;
+    color: #818498;
+    font-size: 1.2rem;
+  }
+  header nav .nav-items-container .nav-items .nav-item:last-child {
+    width: 130px;
+    margin: 1rem auto 0;
+    background-color: #fad400;
+  }
+}
+@media (max-width: 567px) {
+  header nav {
+    padding: 2rem;
+  }
+  header nav .nav-items-container .nav-items {
+    margin: 0 2rem;
+  }
+  header nav .nav-items-container .nav-items::before {
+    right: 30px;
+  }
 }
 @media (max-width: 450px) {
+  header nav {
+    padding: 2rem 1.5rem;
+  }
+  header nav .nav-items-container .nav-items {
+    margin: 0 1.5rem;
+  }
+  header nav .nav-items-container .nav-items::before {
+    right: 22px;
+  }
+
   main .hero {
     background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
     height: 70vh;

@@ -27,4 +27,9 @@ $white: #fff;
 
 // Font-stack
 $font-stack: 600 18px 'Barlow', sans-serif;
-$fraunces-font: 700 18px 'Fraunces', serif;
+$fraunces-font: 900 18px 'Fraunces', serif;
+
+// Javascript Styles
+.display {
+  display: flex !important;
+}

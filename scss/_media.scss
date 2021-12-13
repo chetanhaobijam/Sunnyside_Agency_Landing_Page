@@ -3,25 +3,29 @@
     nav {
       .nav-icon {
         display: block;
+        font-size: 2rem;
+        color: #ffffff78;
+        cursor: pointer;
       }
       .nav-items-container {
         position: absolute;
-        top: 5em;
+        top: 7em;
         left: 0;
         width: 100%;
-        display: flex;
+        display: none;
         
         .nav-items {
           background-color: $white;
           flex-direction: column;
-          color: #000;
           margin: 0 3rem;
           width: 100%;
+          text-align: center;
+          padding: 2rem 0;
 
           &::before {
             content: "";
             position: absolute;
-            top: -20px;
+            top: -19px;
             right: 46px;
             width: 0;
             height: 0;
@@ -30,6 +34,38 @@
             border-bottom: 15px solid transparent;
             transform: rotate(45deg);
           }
+
+          .nav-item {
+            margin: 0;
+            padding: 1rem;
+            color: $dark-grayish-blue;
+            font-size: 1.2rem;
+
+            &:last-child {
+              width: 130px;
+              margin: 1rem auto 0;
+              background-color: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 567px) {
+  header {
+    nav {
+      padding: 2rem;
+  
+      .nav-items-container {
+  
+        .nav-items {
+          margin: 0 2rem;
+  
+          &::before {
+            right: 30px;
+          }
         }
       }
     }
@@ -37,6 +73,23 @@
 }
 
 @media(max-width: 450px) {
+  header {
+    nav {
+      padding: 2rem 1.5rem;
+  
+      .nav-items-container {
+  
+        .nav-items {
+          margin: 0 1.5rem;
+  
+          &::before {
+            right: 22px;
+          }
+        }
+      }
+    }
+  }
+  
   main {
     .hero {
       background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
