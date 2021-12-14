@@ -92,10 +92,10 @@ main .services .grid-item h2 {
   color: #23303E;
 }
 main .services .grid-item p {
-  font-size: 0.8rem;
-  color: #5A636C;
+  font-size: 0.9rem;
+  color: #23303E;
   padding: 2rem 0;
-  width: 73%;
+  width: 84%;
   line-height: 2em;
 }
 main .services .grid-item a {
@@ -105,7 +105,17 @@ main .services .grid-item a {
   font-size: 0.8rem;
   -webkit-text-decoration: underline #fad400;
           text-decoration: underline #fad400;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 5px;
+}
+main .services .grid-item:nth-child(6) h2, main .services .grid-item:nth-child(5) h2 {
+  padding-top: 21rem;
+  text-align: center;
+  width: 100%;
+}
+main .services .grid-item:nth-child(6) p, main .services .grid-item:nth-child(5) p {
+  width: 49%;
+  margin: 0 auto;
+  text-align: center;
 }
 main .services .grid-item:nth-child(1) {
   background: url("./images/desktop/image-transform.jpg") center/cover no-repeat;
@@ -123,6 +133,10 @@ main .services .grid-item:nth-child(4) {
   order: 4;
   padding: 7rem;
 }
+main .services .grid-item:nth-child(4) a {
+  -webkit-text-decoration-color: #fe7867;
+          text-decoration-color: #fe7867;
+}
 main .services .grid-item:nth-child(5) {
   background: url("./images/desktop/image-graphic-design.jpg") top/cover no-repeat;
   order: 5;
@@ -131,7 +145,44 @@ main .services .grid-item:nth-child(6) {
   background: url("./images/desktop/image-photography.jpg") top/cover no-repeat;
   order: 6;
 }
-
+@media (max-width: 990px) {
+  main .services {
+    display: flex;
+    flex-direction: column;
+  }
+  main .services .grid-item h2 {
+    margin: 2rem 1rem 0;
+    width: 100%;
+  }
+  main .services .grid-item p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  main .services .grid-item a {
+    display: inline-block;
+    padding: 1rem 0;
+  }
+  main .services .grid-item:nth-child(5) h2, main .services .grid-item:nth-child(6) h2 {
+    padding-top: 25rem;
+  }
+  main .services .grid-item:nth-child(5) p, main .services .grid-item:nth-child(6) p {
+    width: 80%;
+  }
+  main .services .grid-item:nth-child(1), main .services .grid-item:nth-child(3) {
+    order: 0;
+    width: 100%;
+    height: 50ch;
+  }
+  main .services .grid-item:nth-child(2), main .services .grid-item:nth-child(4) {
+    order: 0;
+    padding: 5rem;
+    text-align: center;
+  }
+  main .services .grid-item:nth-child(5), main .services .grid-item:nth-child(6) {
+    height: 60ch;
+  }
+}
 @media (max-width: 768px) {
   header nav .nav-icon {
     display: block;
@@ -188,6 +239,20 @@ main .services .grid-item:nth-child(6) {
   }
   header nav .nav-items-container .nav-items::before {
     right: 30px;
+  }
+
+  main .services .grid-item h2 {
+    width: 80%;
+    margin: 2rem auto 0;
+  }
+  main .services .grid-item p {
+    width: 90%;
+  }
+  main .services .grid-item:nth-child(1), main .services .grid-item:nth-child(3) {
+    height: 40ch;
+  }
+  main .services .grid-item:nth-child(2), main .services .grid-item:nth-child(4) {
+    padding: 1rem 1rem 2rem;
   }
 }
 @media (max-width: 537px) {
