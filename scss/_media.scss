@@ -167,11 +167,28 @@
   
   main {
     .hero {
-      background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
+      background-image: url("./images/mobile/image-header.jpg") center/cover no-repeat;
       height: 70vh;
       
       img {
         top: 70px;
+      }
+    }
+
+    .services {
+      .grid-item {
+        &:nth-child(1) {
+          background: url("./images/mobile/image-transform.jpg") top/cover no-repeat;
+        }
+        &:nth-child(3) {
+          background: url("./images/mobile/image-stand-out.jpg") top/cover no-repeat;
+        }
+        &:nth-child(5) {
+          background: url("./images/mobile/image-graphic-design.jpg") top/cover no-repeat;
+        }
+        &:nth-child(6) {
+          background: url("./images/mobile/image-photography.jpg") top/cover no-repeat;
+        }
       }
     }
   }
