@@ -142,13 +142,25 @@ main .services .grid-item:nth-child(6) {
   background: url("./images/desktop/image-photography.jpg") top/cover no-repeat;
   order: 6;
 }
+main .testimonials {
+  padding: 7rem;
+}
+main .testimonials h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  font: 900 18px "Fraunces", serif;
+  color: #818498;
+}
+
 @media (max-width: 990px) {
   main .services {
     display: flex;
     flex-direction: column;
   }
   main .services .grid-item h2 {
-    margin: 2rem 1rem 0;
+    margin: 2rem auto 0;
     width: 100%;
   }
   main .services .grid-item p {

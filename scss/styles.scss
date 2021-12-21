@@ -162,7 +162,17 @@ main {
   }
 
   .testimonials {
+    padding: 7rem;
 
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 1.3rem;
+      font: $fraunces-font;
+      color: $dark-grayish-blue;
+      
+    }
   }
 }
 
