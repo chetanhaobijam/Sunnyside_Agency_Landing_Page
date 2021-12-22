@@ -23,7 +23,7 @@ header {
       .nav-items {
         display: flex;
         list-style: none;
-  
+
         .nav-item {
           margin-left: 3rem;
           font-size: 0.9rem;
@@ -32,7 +32,7 @@ header {
           justify-content: center;
           cursor: pointer;
           color: $white;
-  
+
           &:last-child {
             font: $fraunces-font;
             font-weight: 900;
@@ -42,9 +42,9 @@ header {
             border-radius: 30px;
             color: $very-dark-saturated-blue;
             padding: 1rem 1.5rem;
-  
+
             &:hover {
-              background-color: #6FCFFF;
+              background-color: #6fcfff;
               color: $white;
             }
           }
@@ -117,15 +117,17 @@ main {
       }
 
       &:nth-child(1) {
-        background: url("./images/desktop/image-transform.jpg") center/cover no-repeat;
+        background: url("./images/desktop/image-transform.jpg") center/cover
+          no-repeat;
         order: 2;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         order: 1;
         padding: 7rem;
       }
       &:nth-child(3) {
-        background: url("./images/desktop/image-stand-out.jpg") center/cover no-repeat;
+        background: url("./images/desktop/image-stand-out.jpg") center/cover
+          no-repeat;
         order: 3;
       }
       &:nth-child(4) {
@@ -136,7 +138,8 @@ main {
         }
       }
       &:nth-child(5) {
-        background: url("./images/desktop/image-graphic-design.jpg") top/cover no-repeat;
+        background: url("./images/desktop/image-graphic-design.jpg") top/cover
+          no-repeat;
         order: 5;
 
         h2 {
@@ -145,10 +148,10 @@ main {
         p {
           @extend %last-item-p;
         }
-        
       }
       &:nth-child(6) {
-        background: url("./images/desktop/image-photography.jpg") top/cover no-repeat;
+        background: url("./images/desktop/image-photography.jpg") top/cover
+          no-repeat;
         order: 6;
 
         h2 {
@@ -168,10 +171,48 @@ main {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      font-size: 1.3rem;
       font: $fraunces-font;
-      color: $dark-grayish-blue;
-      
+      color: $grayish-blue;
+      margin-bottom: 5rem;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .testimonial-item {
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 50px;
+          border-radius: 50%;
+          margin: 0 auto;
+          margin-bottom: 3rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+          color: $very-dark-grayish-blue;
+          line-height: 2em;
+          width: 70%;
+          margin: 0 auto 5rem;
+          text-align: center;
+        }
+
+        .author {
+          font: $fraunces-font;
+          font-size: 1rem;
+          text-align: center;
+          margin-bottom: 1rem;
+          color: $very-dark-saturated-blue;
+        }
+
+        .designation {
+          font-size: 0.7rem;
+          color: $grayish-blue;
+          text-align: center;
+        }
+      }
     }
   }
 }
