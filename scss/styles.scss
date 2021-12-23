@@ -16,9 +16,14 @@ header {
     padding: 2rem 3rem;
     max-height: 100px;
 
+    .navbrand {
+      padding-top: 0.5rem;
+    }
+
     .nav-icon {
       display: none;
     }
+
     .nav-items-container {
       .nav-items {
         display: flex;
@@ -89,6 +94,7 @@ main {
         width: 72%;
         color: $very-dark-saturated-blue;
       }
+
       p {
         font-size: 0.9rem;
         color: $very-dark-saturated-blue;
@@ -96,6 +102,7 @@ main {
         width: 84%;
         line-height: 2em;
       }
+
       a {
         font: $fraunces-font;
         color: $very-dark-saturated-blue;
@@ -110,6 +117,7 @@ main {
         text-align: center;
         width: 100%;
       }
+
       %last-item-p {
         width: 49%;
         margin: 0 auto;
@@ -121,22 +129,27 @@ main {
           no-repeat;
         order: 2;
       }
+
       &:nth-child(2) {
         order: 1;
         padding: 7rem;
       }
+
       &:nth-child(3) {
         background: url("./images/desktop/image-stand-out.jpg") center/cover
           no-repeat;
         order: 3;
       }
+
       &:nth-child(4) {
         order: 4;
         padding: 7rem;
+
         a {
           text-decoration-color: $soft-red;
         }
       }
+
       &:nth-child(5) {
         background: url("./images/desktop/image-graphic-design.jpg") top/cover
           no-repeat;
@@ -145,10 +158,12 @@ main {
         h2 {
           @extend %last-item-h2;
         }
+
         p {
           @extend %last-item-p;
         }
       }
+
       &:nth-child(6) {
         background: url("./images/desktop/image-photography.jpg") top/cover
           no-repeat;
@@ -157,6 +172,7 @@ main {
         h2 {
           @extend %last-item-h2;
         }
+
         p {
           @extend %last-item-p;
         }
@@ -175,6 +191,7 @@ main {
       color: $grayish-blue;
       margin-bottom: 4rem;
     }
+
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

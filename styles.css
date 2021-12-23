@@ -26,6 +26,9 @@ header nav {
   padding: 2rem 3rem;
   max-height: 100px;
 }
+header nav .navbrand {
+  padding-top: 0.5rem;
+}
 header nav .nav-icon {
   display: none;
 }
