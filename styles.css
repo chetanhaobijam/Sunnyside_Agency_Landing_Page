@@ -151,7 +151,7 @@ main .testimonials h2 {
   letter-spacing: 0.1em;
   font: 900 18px "Fraunces", serif;
   color: #A7AAAE;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 main .testimonials .testimonials-grid {
   display: grid;
@@ -172,8 +172,9 @@ main .testimonials .testimonials-grid .testimonial-item p {
   color: #5A636C;
   line-height: 2em;
   width: 70%;
-  margin: 0 auto 5rem;
+  margin: 0 auto;
   text-align: center;
+  min-height: 14ch;
 }
 main .testimonials .testimonials-grid .testimonial-item .author {
   font: 900 18px "Fraunces", serif;
@@ -188,6 +189,19 @@ main .testimonials .testimonials-grid .testimonial-item .designation {
   text-align: center;
 }
 
+@media (max-width: 1260px) {
+  main .testimonials .testimonials-grid .testimonial-item p {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 1100px) {
+  main .testimonials {
+    padding: 7rem 2rem;
+  }
+  main .testimonials .testimonials-grid .testimonial-item p {
+    min-height: 17ch;
+  }
+}
 @media (max-width: 990px) {
   main .services {
     display: flex;
@@ -272,6 +286,27 @@ main .testimonials .testimonials-grid .testimonial-item .designation {
     margin: 1rem auto 0;
     background-color: #fad400;
   }
+
+  main .testimonials {
+    padding: 3rem 2rem 2rem;
+  }
+  main .testimonials h2 {
+    margin-bottom: 3rem;
+  }
+  main .testimonials .testimonials-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  main .testimonials .testimonials-grid .testimonial-item {
+    margin-bottom: 3rem;
+  }
+  main .testimonials .testimonials-grid .testimonial-item img {
+    margin-bottom: 2rem;
+  }
+  main .testimonials .testimonials-grid .testimonial-item p {
+    font-size: 0.9rem;
+    min-height: 8ch;
+  }
 }
 @media (max-width: 567px) {
   header nav {
@@ -296,6 +331,12 @@ main .testimonials .testimonials-grid .testimonial-item .designation {
   }
   main .services .grid-item:nth-child(2), main .services .grid-item:nth-child(4) {
     padding: 1rem 1rem 2rem;
+  }
+  main .testimonials {
+    padding: 3rem 1rem 2rem;
+  }
+  main .testimonials .testimonials-grid .testimonial-item p {
+    width: 80%;
   }
 }
 @media (max-width: 537px) {
