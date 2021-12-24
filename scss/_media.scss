@@ -219,6 +219,13 @@
       }
     }
   }
+  footer {
+    padding: 1em;
+    line-height: 2em;
+    span {
+      display: block;
+    }
+  }
 }
 
 @media (max-width: 537px) {

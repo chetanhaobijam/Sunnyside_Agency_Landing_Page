@@ -283,4 +283,18 @@ main {
   }
 }
 
+footer {
+  padding: 1.3rem;
+  background-color: $dark-blue;
+  color: $white;
+  font: $fraunces-font;
+  font-size: 0.8rem;
+  text-align: center;
+
+  a {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
 @import "media";

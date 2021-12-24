@@ -230,6 +230,19 @@ main .contact .social-media {
   gap: 1.3rem;
 }
 
+footer {
+  padding: 1.3rem;
+  background-color: #19536b;
+  color: #fff;
+  font: 900 18px "Fraunces", serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+footer a {
+  color: #fad400;
+  text-decoration: none;
+}
+
 @media (max-width: 1260px) {
   main .testimonials .testimonials-grid .testimonial-item p {
     margin-bottom: 1rem;
@@ -378,6 +391,14 @@ main .contact .social-media {
   }
   main .testimonials .testimonials-grid .testimonial-item p {
     width: 80%;
+  }
+
+  footer {
+    padding: 1em;
+    line-height: 2em;
+  }
+  footer span {
+    display: block;
   }
 }
 @media (max-width: 537px) {
