@@ -239,11 +239,46 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     picture {
-      padding-bottom: -0.3rem;
+      margin-bottom: -0.3rem;
 
       img {
         width: 100%;
       }
+    }
+  }
+
+  .contact {
+    background-color: $light-cyan;
+    padding: 4rem;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+      svg {
+        path {
+          fill: $dark-saturated-cyan;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      font-size: 0.9rem;
+      margin-bottom: 5rem;
+
+      a {
+        text-decoration: none;
+        color: $dark-moderate-cyan;
+      }
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 1.3rem;
     }
   }
 }

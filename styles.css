@@ -52,7 +52,7 @@ header nav .nav-items-container .nav-items .nav-item:last-child {
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 30px;
-  color: #23303E;
+  color: #23303e;
   padding: 1rem 1.5rem;
 }
 header nav .nav-items-container .nav-items .nav-item:last-child:hover {
@@ -89,18 +89,18 @@ main .services .grid-item h2 {
   font: 900 18px "Fraunces", serif;
   font-size: 1.8rem;
   width: 72%;
-  color: #23303E;
+  color: #23303e;
 }
 main .services .grid-item p {
   font-size: 0.9rem;
-  color: #23303E;
+  color: #23303e;
   padding: 2rem 0;
   width: 84%;
   line-height: 2em;
 }
 main .services .grid-item a {
   font: 900 18px "Fraunces", serif;
-  color: #23303E;
+  color: #23303e;
   text-transform: uppercase;
   font-size: 0.8rem;
   -webkit-text-decoration: underline #fad400;
@@ -153,7 +153,7 @@ main .testimonials h2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font: 900 18px "Fraunces", serif;
-  color: #A7AAAE;
+  color: #a7aaae;
   margin-bottom: 4rem;
 }
 main .testimonials .testimonials-grid {
@@ -172,7 +172,7 @@ main .testimonials .testimonials-grid .testimonial-item img {
 }
 main .testimonials .testimonials-grid .testimonial-item p {
   font-size: 0.8rem;
-  color: #5A636C;
+  color: #5a636c;
   line-height: 2em;
   width: 70%;
   margin: 0 auto;
@@ -184,11 +184,11 @@ main .testimonials .testimonials-grid .testimonial-item .author {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1rem;
-  color: #23303E;
+  color: #23303e;
 }
 main .testimonials .testimonials-grid .testimonial-item .designation {
   font-size: 0.7rem;
-  color: #A7AAAE;
+  color: #a7aaae;
   text-align: center;
 }
 main .gallery {
@@ -196,10 +196,38 @@ main .gallery {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 main .gallery picture {
-  padding-bottom: -0.3rem;
+  margin-bottom: -0.3rem;
 }
 main .gallery picture img {
   width: 100%;
+}
+main .contact {
+  background-color: #90d4c5;
+  padding: 4rem;
+}
+main .contact .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+main .contact .logo svg path {
+  fill: #25564b;
+}
+main .contact .links {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  font-size: 0.9rem;
+  margin-bottom: 5rem;
+}
+main .contact .links a {
+  text-decoration: none;
+  color: #458c7e;
+}
+main .contact .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
 }
 
 @media (max-width: 1260px) {
