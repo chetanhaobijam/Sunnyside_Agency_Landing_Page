@@ -193,7 +193,7 @@ main .testimonials .testimonials-grid .testimonial-item .designation {
 }
 main .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 main .gallery picture {
   margin-bottom: -0.3rem;
@@ -412,9 +412,19 @@ footer a {
   }
   header nav .nav-items-container .nav-items {
     margin: 0 1.5rem;
+    padding: 2.5rem 0;
   }
   header nav .nav-items-container .nav-items::before {
     right: 22px;
+  }
+  header nav .nav-items-container .nav-items .nav-item {
+    font-size: 1.3rem;
+    padding: 1.1rem 0;
+  }
+  header nav .nav-items-container .nav-items .nav-item:last-child {
+    width: 150px;
+    font-size: 1.2rem;
+    padding: 1.3rem 1.5rem;
   }
 
   main .hero {
@@ -422,7 +432,7 @@ footer a {
     height: 70vh;
   }
   main .hero img {
-    top: 70px;
+    top: 35px;
   }
   main .services .grid-item:nth-child(1) {
     background: url("./images/mobile/image-transform.jpg") top/cover no-repeat;
@@ -435,5 +445,26 @@ footer a {
   }
   main .services .grid-item:nth-child(6) {
     background: url("./images/mobile/image-photography.jpg") top/cover no-repeat;
+  }
+  main .testimonials {
+    padding-top: 4rem;
+  }
+  main .testimonials h2 {
+    margin-bottom: 5rem;
+  }
+  main .testimonials .testimonials-grid .testimonial-item {
+    margin-bottom: 5rem;
+  }
+  main .testimonials .testimonials-grid .testimonial-item img {
+    width: 100px;
+  }
+  main .testimonials .testimonials-grid .testimonial-item p {
+    font-size: 1rem;
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+  main .contact .links {
+    gap: 4em;
+    font-size: 1rem;
   }
 }

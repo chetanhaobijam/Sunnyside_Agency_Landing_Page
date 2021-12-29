@@ -246,9 +246,21 @@
       .nav-items-container {
         .nav-items {
           margin: 0 1.5rem;
+          padding: 2.5rem 0;
 
           &::before {
             right: 22px;
+          }
+
+          .nav-item {
+            font-size: 1.3rem;
+            padding: 1.1rem 0;
+
+            &:last-child {
+              width: 150px;
+              font-size: 1.2rem;
+              padding: 1.3rem 1.5rem;
+            }
           }
         }
       }
@@ -262,7 +274,7 @@
       height: 70vh;
 
       img {
-        top: 70px;
+        top: 35px;
       }
     }
 
@@ -287,6 +299,33 @@
           background: url("./images/mobile/image-photography.jpg") top/cover
             no-repeat;
         }
+      }
+    }
+
+    .testimonials {
+      padding-top: 4rem;
+      h2 {
+        margin-bottom: 5rem;
+      }
+      .testimonials-grid {
+        .testimonial-item {
+          margin-bottom: 5rem;
+
+          img {
+            width: 100px;
+          }
+          p {
+            font-size: 1rem;
+            width: 85%;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    .contact {
+      .links {
+        gap: 4em;
+        font-size: 1rem;
       }
     }
   }
