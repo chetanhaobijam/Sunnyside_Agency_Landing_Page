@@ -199,7 +199,7 @@ main .testimonials .testimonials-grid .testimonial-item p {
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  min-height: 14ch;
+  min-height: 18ch;
 }
 main .testimonials .testimonials-grid .testimonial-item .author {
   font: 900 18px "Fraunces", serif;
@@ -296,7 +296,7 @@ footer a {
     padding: 7rem 2rem;
   }
   main .testimonials .testimonials-grid .testimonial-item p {
-    min-height: 17ch;
+    min-height: 21ch;
   }
 }
 @media (max-width: 1030px) {
