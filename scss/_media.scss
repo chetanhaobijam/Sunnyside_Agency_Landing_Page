@@ -28,6 +28,18 @@
   }
 }
 
+@media (max-width: 1030px) {
+  main {
+    .services {
+      .grid-item {
+        %last-item-h2 {
+          padding-top: 23rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 990px) {
   main {
     .services {
@@ -49,10 +61,6 @@
         a {
           display: inline-block;
           padding: 1rem 0;
-        }
-
-        %last-item-h2 {
-          padding-top: 25rem;
         }
 
         %last-item-p {
@@ -140,6 +148,13 @@
   }
 
   main {
+    .services {
+      .grid-item {
+        %last-item-h2 {
+          padding-top: 21rem;
+        }
+      }
+    }
     .testimonials {
       padding: 3rem 2rem 2rem;
 
@@ -298,6 +313,10 @@
         &:nth-child(6) {
           background: url("./images/mobile/image-photography.jpg") top/cover
             no-repeat;
+        }
+
+        %last-item-h2 {
+          padding-top: 19rem;
         }
       }
     }
