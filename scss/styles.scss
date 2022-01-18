@@ -110,8 +110,21 @@ main {
         color: $very-dark-saturated-blue;
         text-transform: uppercase;
         font-size: 0.8rem;
-        text-decoration: underline $yellow;
-        text-decoration-thickness: 5px;
+        text-decoration: none;
+      }
+
+      .underline {
+        width: 12ch;
+        height: 10px;
+        background-color: $yellow;
+        margin: -0.5rem 0 0 -0.5rem;
+        border-radius: 10px;
+        z-index: -1;
+        opacity: 0.4;
+      }
+
+      .red-underline {
+        background-color: $soft-red;
       }
 
       %last-item-h2 {
@@ -274,6 +287,10 @@ main {
       a {
         text-decoration: none;
         color: $dark-moderate-cyan;
+
+        &:hover {
+          color: $white;
+        }
       }
     }
 

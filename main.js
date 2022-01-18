@@ -2,6 +2,8 @@ const navIcon = document.querySelector("#nav-icon");
 const navItemsContainer = document.querySelector("#nav-items-container");
 const scrollToTopBtn = document.querySelector(".scrollTop");
 const rootElement = document.documentElement;
+const learnMore = document.querySelectorAll(".services .grid-item a");
+const underlines = document.querySelectorAll(".underline");
 
 // Function to toggle Display of Nav Items
 navIcon.addEventListener("click", (e) => {
@@ -19,3 +21,21 @@ const handleScroll = () => {
 };
 
 document.addEventListener("scroll", handleScroll);
+
+// Function to turn Full Opacity when clicked on Learn More
+const turnOnOpacity = () => {
+  underlines.forEach((item) => {
+    item.classList.add("full-opacity");
+  });
+};
+
+const turnOffOpacity = () => {
+  underlines.forEach((item) => {
+    item.classList.remove("full-opacity");
+  });
+};
+
+learnMore.forEach((item) => {
+  item.addEventListener("mouseenter", turnOnOpacity);
+  item.addEventListener("mouseleave", turnOffOpacity);
+});

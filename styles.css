@@ -31,6 +31,10 @@
   display: flex !important;
 }
 
+.full-opacity {
+  opacity: 1 !important;
+}
+
 body,
 html {
   font: 600 18px "Barlow", sans-serif;
@@ -125,9 +129,19 @@ main .services .grid-item a {
   color: #23303e;
   text-transform: uppercase;
   font-size: 0.8rem;
-  -webkit-text-decoration: underline #fad400;
-          text-decoration: underline #fad400;
-  text-decoration-thickness: 5px;
+  text-decoration: none;
+}
+main .services .grid-item .underline {
+  width: 12ch;
+  height: 10px;
+  background-color: #fad400;
+  margin: -0.5rem 0 0 -0.5rem;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.4;
+}
+main .services .grid-item .red-underline {
+  background-color: #fe7867;
 }
 main .services .grid-item:nth-child(6) h2, main .services .grid-item:nth-child(5) h2 {
   padding-top: 21rem;
@@ -246,6 +260,9 @@ main .contact .links a {
   text-decoration: none;
   color: #458c7e;
 }
+main .contact .links a:hover {
+  color: #fff;
+}
 main .contact .social-media {
   display: flex;
   justify-content: center;
@@ -321,6 +338,9 @@ footer a {
   main .services .grid-item a {
     display: inline-block;
     padding: 1rem 0;
+  }
+  main .services .grid-item .underline {
+    margin: -1.5rem auto 2rem auto;
   }
   main .services .grid-item:nth-child(5) p, main .services .grid-item:nth-child(6) p {
     width: 80%;
