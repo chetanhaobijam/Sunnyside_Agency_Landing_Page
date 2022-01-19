@@ -125,7 +125,7 @@
             content: "";
             position: absolute;
             top: -19px;
-            right: 46px;
+            right: 52px;
             width: 0;
             height: 0;
             border-top: 15px solid transparent;
@@ -187,6 +187,16 @@
   }
 }
 
+@media (max-width: 591px) {
+  main {
+    .hero {
+      img {
+        top: 20px;
+      }
+    }
+  }
+}
+
 @media (max-width: 567px) {
   header {
     nav {
@@ -197,7 +207,7 @@
           margin: 0 2rem;
 
           &::before {
-            right: 30px;
+            right: 34px;
           }
         }
       }
@@ -247,16 +257,6 @@
   }
 }
 
-@media (max-width: 537px) {
-  main {
-    .hero {
-      img {
-        top: 20px;
-      }
-    }
-  }
-}
-
 @media (max-width: 450px) {
   header {
     nav {
@@ -268,7 +268,7 @@
           padding: 2.5rem 0;
 
           &::before {
-            right: 22px;
+            right: 25px;
           }
 
           .nav-item {

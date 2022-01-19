@@ -4,6 +4,8 @@ const scrollToTopBtn = document.querySelector(".scrollTop");
 const rootElement = document.documentElement;
 const learnMore = document.querySelectorAll(".services .grid-item a");
 const underlines = document.querySelectorAll(".underline");
+const socialSvgs = document.querySelectorAll(".social-media svg");
+const svgPath = document.querySelectorAll(".social-media svg path");
 
 // Function to toggle Display of Nav Items
 navIcon.addEventListener("click", (e) => {
@@ -39,3 +41,13 @@ learnMore.forEach((item) => {
   item.addEventListener("mouseenter", turnOnOpacity);
   item.addEventListener("mouseleave", turnOffOpacity);
 });
+
+// Function to Turn the Social Media Icons Color to White on Hover
+for (let i = 0; i < socialSvgs.length; i++) {
+  socialSvgs[i].addEventListener("mouseenter", () => {
+    svgPath[i].classList.add("svg-white");
+  });
+  socialSvgs[i].addEventListener("mouseleave", () => {
+    svgPath[i].classList.remove("svg-white");
+  });
+}

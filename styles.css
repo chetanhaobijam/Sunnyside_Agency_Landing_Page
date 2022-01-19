@@ -35,6 +35,10 @@
   opacity: 1 !important;
 }
 
+.svg-white {
+  fill: #fff !important;
+}
+
 body,
 html {
   font: 600 18px "Barlow", sans-serif;
@@ -268,6 +272,9 @@ main .contact .social-media {
   justify-content: center;
   gap: 1.3rem;
 }
+main .contact .social-media svg {
+  cursor: pointer;
+}
 
 footer {
   padding: 1.3rem;
@@ -386,7 +393,7 @@ footer a {
     content: "";
     position: absolute;
     top: -19px;
-    right: 46px;
+    right: 52px;
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
@@ -430,6 +437,11 @@ footer a {
     min-height: 8ch;
   }
 }
+@media (max-width: 591px) {
+  main .hero img {
+    top: 20px;
+  }
+}
 @media (max-width: 567px) {
   header nav {
     padding: 2rem;
@@ -438,7 +450,7 @@ footer a {
     margin: 0 2rem;
   }
   header nav .nav-items-container .nav-items::before {
-    right: 30px;
+    right: 34px;
   }
 
   main .services .grid-item h2 {
@@ -469,11 +481,6 @@ footer a {
     display: block;
   }
 }
-@media (max-width: 537px) {
-  main .hero img {
-    top: 20px;
-  }
-}
 @media (max-width: 450px) {
   header nav {
     padding: 2rem 1.5rem;
@@ -483,7 +490,7 @@ footer a {
     padding: 2.5rem 0;
   }
   header nav .nav-items-container .nav-items::before {
-    right: 22px;
+    right: 25px;
   }
   header nav .nav-items-container .nav-items .nav-item {
     font-size: 1.3rem;
